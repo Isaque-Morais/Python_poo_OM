@@ -1,3 +1,5 @@
+from random import randint
+
 class Pessoa():
 
     ano_atual = 2019
@@ -15,8 +17,16 @@ class Pessoa():
         idade = cls.ano_atual - ano_nascimeto
         return cls(nome, idade)
 
+    @staticmethod
+    def gerar_id():
+        id = randint(0, 1000)
+        return id
+
 #Criando a intancia
 pessoa_1 = Pessoa.por_ano_nascimeto('Isaque', 1999)
 print(pessoa_1)
 print(pessoa_1.nome, pessoa_1.idade)
 pessoa_1.get_ano_nascimeto()
+
+gerando_id = Pessoa.gerar_id()
+print(gerando_id)
