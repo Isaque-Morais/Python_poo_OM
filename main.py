@@ -1,9 +1,22 @@
-from pessoa import Pessoa
+class Pessoa():
 
-p_1 = Pessoa('Isaque', 20)
-p_2 = Pessoa('Ana', 21)
-p_3 = Pessoa('Fernando', 30)
+    ano_atual = 2019
 
-print(p_1.get_month_nascimento())
-print(p_2.get_month_nascimento())
-print(p_3.get_month_nascimento())
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+    
+    def get_ano_nascimeto(self):
+        print(self.ano_atual - self.idade)
+    
+    @classmethod
+    #cls passado por parametro na função indica que pode usar atributos da classe
+    def por_ano_nascimeto(cls, nome, ano_nascimeto):
+        idade = cls.ano_atual - ano_nascimeto
+        return cls(nome, idade)
+
+#Criando a intancia
+pessoa_1 = Pessoa.por_ano_nascimeto('Isaque', 1999)
+print(pessoa_1)
+print(pessoa_1.nome, pessoa_1.idade)
+pessoa_1.get_ano_nascimeto()
