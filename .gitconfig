@@ -1,0 +1,3 @@
+[filter "strip-comments"]
+    clean = "sed '/^ *#/d'"
+    smudge = cat
