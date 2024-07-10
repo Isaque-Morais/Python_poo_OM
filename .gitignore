@@ -1,0 +1,92 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribuição / pacotes de distribuição
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Arquivos do instalador
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Configurações de log e banco de dados
+*.log
+*.sql
+*.sqlite
+
+# Diretórios do ambiente virtual
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Arquivos de configuração do Jupyter Notebook
+.ipynb_checkpoints
+
+# Arquivos do Pytest
+.cache
+
+# Arquivos de cobertura de testes
+coverage_html_report/
+.coverage
+
+# Arquivos de configuração do editor
+.idea/
+.vscode/
+*.swp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração do Sphinx
+docs/_build/
+
+# Arquivos de configuração do Flask
+instance/
+.webassets-cache
+
+# Arquivos de configuração do Scrapy
+.scrapy
+
+# Arquivos de configuração do Sphinx
+docs/_build/
+
+# Arquivos do PyCharm
+*.iml
+.idea/
+*.ipr
+*.iws
+.idea/
+
+# Arquivos do mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Arquivos do Pylint
+pylint.log
